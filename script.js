@@ -93,3 +93,27 @@ loadLinks();
 renderCalendar();
 setInterval(updateClock, 1000);
 updateClock();
+
+// --- QUOTE SYSTEM ---
+const quotes = [
+    { text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill" },
+    { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { text: "Don't watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+    { text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
+    { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+    { text: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau" },
+    { text: "The only limit to our realization of tomorrow is our doubts of today.", author: "Franklin D. Roosevelt" },
+    { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" },
+    { text: "Your time is limited, so don't waste it living someone else's life.", author: "Steve Jobs" },
+    { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" }
+];
+
+function showRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quote = quotes[randomIndex];
+    document.getElementById('quote-text').textContent = `"${quote.text}"`;
+    document.getElementById('quote-author').textContent = `— ${quote.author}`;
+}
+
+// Initialize quote on page load
+showRandomQuote();
