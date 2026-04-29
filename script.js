@@ -117,3 +117,6 @@ function showRandomQuote() {
 
 // Initialize quote on page load
 showRandomQuote();
+
+// Force focus on search input
+document.getElementById('search-input').focus();
