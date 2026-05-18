@@ -33,13 +33,6 @@
       { "name": "Z-Library", "url": "https://z-lib.gd" },
       { "name": "Courses", "url": "https://github.com/MasterBrian99/Free-Courses-For-Everyone" },
       { "name": "Learn Anything", "url": "https://learn-anything.xyz/" }
-    {
-    "category": "WoW",
-    "links": [
-        { "name": "WoWTBC.gg", "url": "https://wowtbc.gg/bis-list/arcane-mage/" },
-        { "name": "TMB", "url": "https://thatsmybis.com/" }
-    ]
-}
     ]
   }
 ]
